@@ -1,2 +1,4 @@
 # Text2Emojies
 This project is a simple web application that converts text into emojis to make messages more fun and expressive. It is developed by one student as a learning project to practice programming and web development skills. In the future, the project will be improved by adding more emojis, better text transformations, and a cleaner user interface.
+# HTML 
+To guarantee a user-friendly interface, I organized the page in HTML in a clear and sensitive manner. There are buttons to begin the transformation or remove the content, a text area where the user can write their message, and a dropdown menu to select the transformation style. Without reloading the page, the modified text is shown instantly in the results box. Because each element has a unique ID, JavaScript can quickly obtain them and control interactions. The page is readable, effective
