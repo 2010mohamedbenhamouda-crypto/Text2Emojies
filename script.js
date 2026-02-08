@@ -1,4 +1,4 @@
-const button = document.getElementById("convertbuttom");
+const button = document.getElementById("convertButton");
 const inputText = document.getElementById("textinput");
 const styleSelect = document.getElementById("style-select");
 const resultSection = document.getElementById("result");
@@ -229,3 +229,23 @@ clearButton.addEventListener("click", () => {
     resultSection.innerHTML = "";
     styleSelect.selectedIndex = 0;
 });
+const charCount = document.getElementById("char-count");
+
+inputText.addEventListener("input", () => {
+    charCount.textContent = `${inputText.value.length} characters`;
+});
+const copyButton = document.getElementById('copyButton');
+
+copyButton.addEventListener('click', () => {
+    const textToCopy = resultSection.innerText;
+
+    if (!textToCopy.trim()) return;
+
+    navigator.clipboard.writeText(textToCopy); // correction ici
+    copyButton.textContent = "Copied ✔️";
+
+    setTimeout(() => {
+        copyButton.textContent = "Copy";
+    }, 1200);
+});
+
