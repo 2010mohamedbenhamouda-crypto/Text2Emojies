@@ -192,7 +192,7 @@ section {
 #textinput::placeholder {
     color: #888;
 }
-#convertbuttom {
+#convertButton {
     background-color: #ff69b4;
     border: none;
     border-radius: 14px;
@@ -200,12 +200,14 @@ section {
     font-size: 1.2rem;
     color: #fff;
     cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.2s ease;
+    transition: background-color 0.2s, transform 0.2s;
 }
-#convertbuttom:hover {
+
+#convertButton:hover {
     background-color: #ff4fa3;
     transform: scale(1.05);
 }
+
 #input:focus-within {
     background-color: #262626;
 }
@@ -325,4 +327,39 @@ footer {
     background-color: #666;
     transform: scale(1.05);
 }
+#dev-message {
+    margin: 120px auto;
+    padding: 60px 30px;
+    max-width: 700px;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    color: #bbb;
+    opacity: 0.85;
+}
+
+#dev-message p {
+    line-height: 1.8;
+}
+#char-count {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #aaa;
+    text-align: left;
+}
+#copyButton {
+    margin-top: 12px;
+    padding: 8px 16px;
+    border-radius: 12px;
+    border: none;
+    background-color: #444;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#copyButton:hover {
+    background-color: #666;
+}
+
 
